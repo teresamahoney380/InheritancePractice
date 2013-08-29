@@ -1,24 +1,24 @@
 /*
- * This is the Employee Super Class
+ * Super class Employee implements IntEmployee interface
  */
-package Concrete;
+package InterfacePkg;
 
 /**
  *
  * Teresa Mahoney
  */
-public class Employee {
+public class IntEmployeeSuper implements IntEmployee {
     private String eName; // employee name
     private String eDepartment; // employee department
     private String ePosition; // employee position
     public double weeklyPay; // employee weekly pay
     
     // no arg constuctor
-    public Employee() {
+    public IntEmployeeSuper() {
     }
 
     // constructor
-    public Employee(String eName, String eDepartment, String ePosition) {
+    public IntEmployeeSuper(String eName, String eDepartment, String ePosition) {
         this.eName = eName;
         this.eDepartment = eDepartment;
         this.ePosition = ePosition;
@@ -63,6 +63,5 @@ public class Employee {
         return "\n eName=" + eName + "\n eDepartment=" + eDepartment + 
                 "\n ePosition=" + ePosition;
     }
-    
     
 }
