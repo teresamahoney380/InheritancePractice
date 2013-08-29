@@ -11,6 +11,7 @@ public class SalariedEmployee extends Employee {
     public SalariedEmployee(String eName, String eDepartment, String ePosition, double samt) {
         super(eName, eDepartment, ePosition);
         salaryAmt=samt;
+        calcWklyPay();
     }
 
 // methods
@@ -18,14 +19,14 @@ public class SalariedEmployee extends Employee {
         return salaryAmt;
     }
     // calc weekly pay
-    public double calcWklyPay () {
-        return (salaryAmt/52);
+    public void calcWklyPay () {
+        super.setWeeklyPay(salaryAmt/52);
     }
 
     @Override
     public String toString() {
         return "SalariedEmployee{" +super.toString() +"\nsalaryAmt=" + salaryAmt 
-                + "\nWeekly Pay: "+this.calcWklyPay()+'}';
+                + "\nWeekly Pay: "+super.getWeeklyPay()+'}';
     }
     
     

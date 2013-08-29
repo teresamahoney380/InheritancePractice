@@ -11,7 +11,7 @@ public class Employee {
     private String eName; // employee name
     private String eDepartment; // employee department
     private String ePosition; // employee position
-    private double weeklyPay; // employee weekly pay
+    public double weeklyPay; // employee weekly pay
     
     // no arg constuctor
     public Employee() {
@@ -30,12 +30,13 @@ public class Employee {
 
     public void setWeeklyPay(double weeklyPay) {
         this.weeklyPay = weeklyPay;
+        
     }
 
     @Override
     public String toString() {
-        return "Employee{" + "eName=" + eName + "\n eDepartment=" + eDepartment + 
-                "\n ePosition=" + ePosition + "\n weeklyPay=" + weeklyPay + '}';
+        return "\n eName=" + eName + "\n eDepartment=" + eDepartment + 
+                "\n ePosition=" + ePosition;
     }
     
     
