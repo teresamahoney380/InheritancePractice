@@ -23,11 +23,12 @@ public class HourlyEmployee extends Employee {
     // calc weekly pay
     public void calcWklyPay(double hrs){
        super.setWeeklyPay((hrlyWage*hrs));
-    }
+     }
 
     @Override
     public String toString() {
         return "\nHourlyEmployee{"+super.toString() + "\nhrlyWage=" + hrlyWage +
+                "\nWeekly Pay: "+
                 super.getWeeklyPay()+'}';
     }
     

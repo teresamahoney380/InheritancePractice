@@ -24,6 +24,31 @@ public class Employee {
         this.ePosition = ePosition;
     }
 
+    public String geteName() {
+        return eName;
+    }
+
+    public void seteName(String eName) {
+        this.eName = eName;
+    }
+
+    public String geteDepartment() {
+        return eDepartment;
+    }
+
+    public void seteDepartment(String eDepartment) {
+        this.eDepartment = eDepartment;
+    }
+
+    public String getePosition() {
+        return ePosition;
+    }
+
+    public void setePosition(String ePosition) {
+        this.ePosition = ePosition;
+    }
+    
+
     public double getWeeklyPay() {
         return weeklyPay;
     }
