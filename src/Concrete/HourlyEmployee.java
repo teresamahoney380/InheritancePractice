@@ -1,16 +1,17 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * This is the subclass for hourly employees
  */
 package Concrete;
 
 
 public class HourlyEmployee extends Employee {
-    private double hrlyWage;
+    private double hrlyWage, hrsWorked;
 
     public HourlyEmployee(String eName, String eDepartment, String ePosition, double wage, double hrs) {
         super(eName, eDepartment, ePosition);
         hrlyWage = wage;
+        hrsWorked = hrs;
+        calcWklyPay(hrsWorked);
     }
 
 // methods
