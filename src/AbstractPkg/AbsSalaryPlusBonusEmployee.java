@@ -1,20 +1,17 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * Subclass of Abstract Employee for Salaried plus Bonus.
  */
-package Concrete;
+package AbstractPkg;
 
 
-public class SalaryPlusBonusEmployee extends SalariedEmployee {
+public class AbsSalaryPlusBonusEmployee extends AbsSalariedEmployee {
     private double bonusAmt;
 
-    public SalaryPlusBonusEmployee(String eName, String eDepartment, String ePosition, double samt,
-            double bamt) {
+    public AbsSalaryPlusBonusEmployee(String eName, String eDepartment, String ePosition, 
+            double samt, double bamt) {
         super(eName, eDepartment, ePosition, samt);
-            
-        bonusAmt=bamt; // set bonus amount
+        bonusAmt=bamt;        
     }
-
     public double getBonusAmt() {
         return bonusAmt;
     }
@@ -33,6 +30,5 @@ public class SalaryPlusBonusEmployee extends SalariedEmployee {
                 +"\nBonus Amount: "+bonusAmt
                 + "\nWeekly Pay + Bonus: "+super.getWeeklyPay()+'}';
     }
-    
     
 }

@@ -11,7 +11,7 @@ public class SalariedEmployee extends Employee {
     public SalariedEmployee(String eName, String eDepartment, String ePosition, double samt) {
         super(eName, eDepartment, ePosition);
         salaryAmt=samt;
-        calcWklyPay();
+      //  calcWklyPay();
     }
 
 // methods

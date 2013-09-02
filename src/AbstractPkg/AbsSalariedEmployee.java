@@ -15,8 +15,7 @@ public class AbsSalariedEmployee extends AbstractEmployee {
     public AbsSalariedEmployee(String eName, String eDepartment, String ePosition, double samt) {
         super(eName, eDepartment, ePosition);
         salaryAmt=samt;
-        calcWklyPay();
-    }
+   }
 
 // methods
     public double getSalaryAmt() {
@@ -24,6 +23,7 @@ public class AbsSalariedEmployee extends AbstractEmployee {
     }
     // calc weekly pay
         // overrides abstract method
+    @Override
     public void calcWklyPay () {
         super.setWeeklyPay(salaryAmt/52);
     }
