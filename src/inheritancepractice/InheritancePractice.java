@@ -23,12 +23,14 @@ public class InheritancePractice {
         // Demo of concrete code
         SalariedEmployee sal1= new SalariedEmployee("Herb Hanover","Accounting",
                 "Sr Mgr",50000);
+        sal1.calcWklyPay();//set weekly pay
        
                 
        HourlyEmployee hrlyEmp1= new HourlyEmployee("Patti Smith","Accounting",
                 "Clerk", 14.25, 37.00);
        SalaryPlusBonusEmployee spbe1=new SalaryPlusBonusEmployee("Bob Parker",
                "Sales","Sr Account Mgr",45000,2000);
+       spbe1.calcWklyPay();
         System.out.println("THIS IS THE OUTPUT FOR THE CONCRETE PACKAGE\n");
         System.out.println(sal1.toString());
         System.out.println(hrlyEmp1.toString());
