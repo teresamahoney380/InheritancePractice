@@ -9,6 +9,7 @@ import Concrete.HourlyEmployee;
 import Concrete.SalaryPlusBonusEmployee;
 import AbstractPkg.AbsSalariedEmployee;
 import AbstractPkg.AbsSalaryPlusBonusEmployee;
+import AbstractPkg.AbsHourlyEmployee;
 
 
 /**
@@ -45,8 +46,12 @@ public class InheritancePractice {
         AbsSalaryPlusBonusEmployee absSpbe1=new AbsSalaryPlusBonusEmployee("AbstractBob Parker",
                "Sales","Sr Account Mgr",45000,2000);
         absSpbe1.calcWklyPay();
+        AbsHourlyEmployee absHrlyEmp1=new AbsHourlyEmployee("AbstractPatti Smith","Accounting",
+                "Clerk", 14.25, 37.00);
+        absHrlyEmp1.calcWklyPay();
         System.out.println("\n THIS IS THE OUTPUT FOR THE ABSTRACT PACKAGE\n");
         System.out.println(absSal1.toString());
         System.out.println(absSpbe1.toString());
+        System.out.println(absHrlyEmp1.toString());
     }
 }
