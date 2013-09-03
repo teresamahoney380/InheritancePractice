@@ -7,7 +7,7 @@ package InterfacePkg;
  *
  * Teresa Mahoney
  */
-public class IntEmployeeSuper implements IntEmployee {
+public abstract class IntEmployeeSuper implements IntEmployee {
     private String eName; // employee name
     private String eDepartment; // employee department
     private String ePosition; // employee position
@@ -55,6 +55,9 @@ public class IntEmployeeSuper implements IntEmployee {
 
     public void setWeeklyPay(double weeklyPay) {
         this.weeklyPay = weeklyPay;
+        
+    }
+    public void calcWeeklyPay(){
         
     }
 

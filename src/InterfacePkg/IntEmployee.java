@@ -27,6 +27,8 @@ public interface IntEmployee {
 
     public void setWeeklyPay(double weeklyPay); 
 
-    public String toString(); 
+    public String toString();
+    
+    public void calcWklyPay();
     
 }

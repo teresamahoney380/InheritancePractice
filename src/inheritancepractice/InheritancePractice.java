@@ -10,6 +10,7 @@ import Concrete.SalaryPlusBonusEmployee;
 import AbstractPkg.AbsSalariedEmployee;
 import AbstractPkg.AbsSalaryPlusBonusEmployee;
 import AbstractPkg.AbsHourlyEmployee;
+import InterfacePkg.IntSalariedEmployee;
 
 
 /**
@@ -53,5 +54,13 @@ public class InheritancePractice {
         System.out.println(absSal1.toString());
         System.out.println(absSpbe1.toString());
         System.out.println(absHrlyEmp1.toString());
+        //
+        // Output from Interface Class
+        //
+        System.out.println("\n THIS IS THE OUTPUT FOR THE INTERFACE PACKAGE\n");
+        IntSalariedEmployee intSal1=new IntSalariedEmployee("InterfaceHerb Hanover","Accounting",
+                "Sr Mgr",50000);
+        intSal1.calcWklyPay();
+        System.out.println(intSal1.toString());
     }
 }
